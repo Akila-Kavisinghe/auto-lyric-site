@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Features · auto-lyric</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icon.png" />
+</head>
+<body>
+  <nav>
+    <a class="brand" href="index.html"><img src="icon.png" alt="" />auto-lyric</a>
+    <a href="index.html">Home</a>
+    <a href="features.html" class="active">Features</a>
+    <a href="tiktok.html">TikTok Integration</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <h1>Features</h1>
+  <p class="tagline">Everything between a raw take and a finished vertical video.</p>
+
+  <h2>Word-accurate lyric sync</h2>
+  <p>Each song's lyrics are force-aligned to its audio, so every word carries a start and end
+  time. Sections (verse, chorus, bridge) are marked on the waveform, and each section can carry
+  multiple tapped beat progressions that drive cutting. Sync can be refined by hand in a dedicated
+  editor when the automatic alignment needs correction.</p>
+
+  <h2>Multi-cam sync and beat cutting</h2>
+  <p>Multiple camera angles of the same performance are aligned against a parent take, forming a
+  multi-cam group. Cuts between angles are generated from beats tapped in time with the music, with
+  controls for avoiding repeated angles, using saved crop variations, and falling back to the
+  parent angle where coverage runs out. The result is editable per segment before export.</p>
+
+  <h2>Caption and font templates</h2>
+  <p>Caption styling is template-driven: font family and weight, fine typography (tracking, line
+  height, per-word emphasis), text and background colors, animation mode, and placement are saved
+  as reusable templates that apply across songs. Hooks (attention-grabbing opening text) have their
+  own layout system with drag-to-position preview.</p>
+
+  <h2>Footage library</h2>
+  <p>All clips across all songs live in one tagged library: song tags, folder tags, and custom
+  tags combine into queries that drive automatic clip selection. B-Roll clips carry marked
+  highlight ranges so only their best moments are used. Per-clip framings define how each source
+  clip is cropped for vertical and 4:3 output, and framings can themselves be tagged and filtered.</p>
+
+  <h2>Mass export pipeline</h2>
+  <p>Styles define recipes (a multi-cam, or a song plus a tag query). The generator rolls batches
+  of randomized draft videos from those recipes, assigning hooks from curated pools. Drafts are
+  previewed inline, re-rolled, edited in the full editors, and approved or rejected. Approved items
+  render to MP4 in batch through a Remotion-based render pipeline, with failures reported per item
+  and per style.</p>
+
+  <h2>Delivery to TikTok</h2>
+  <p>At the end of the pipeline, approved and rendered videos are sent to the band's own TikTok
+  accounts as inbox drafts using TikTok's official Content Posting API. Posting itself always
+  happens manually from the TikTok app. See <a href="tiktok.html">TikTok Integration</a> for
+  exactly how this works and which permissions it uses.</p>
+
+  <footer>
+    auto-lyric is built and operated by Akila Kavisinghe for AKILA &amp; The Wonder Machine.<br />
+    <a href="terms.html">Terms of Service</a> · <a href="privacy.html">Privacy Policy</a> ·
+    <a href="mailto:akilakavisinghe1999@gmail.com">Contact</a>
+  </footer>
+</body>
+</html>
